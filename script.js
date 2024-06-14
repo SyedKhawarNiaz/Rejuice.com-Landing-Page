@@ -1,5 +1,35 @@
 let menuopen = document.querySelector(".effect");
 let closemenu = document.querySelector(".closebtn");
+let contain = document.querySelector(".container");
+let re = document.querySelector(".rejouice");
+console.log(re);
+contain.addEventListener("mousemove", (val) => {
+  gsap.to(".move", {
+    x: val.clientX,
+    y: val.clientY,
+    duration: 1,
+    ease: "power2.out",
+    // backgroundColor: "white",
+  });
+});
+
+re.addEventListener("mouseenter", (val) => {
+  gsap.to(".move", {
+    scale: 1.2,
+    duration: 1,
+    backgroundColor: "black",
+    ease: "power2.out",
+    // Cursor: "pointer",
+  });
+});
+re.addEventListener("mouseleave", (val) => {
+  gsap.to(".move", {
+    scale: 1,
+    duration: 1,
+    backgroundColor: "white",
+    ease: "power2.out",
+  });
+});
 let yl = gsap.timeline({ paused: true });
 yl.from(
   "ul li,.menu-btn",
