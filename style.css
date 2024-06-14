@@ -1,0 +1,311 @@
+@font-face {
+  font-family: awesome;
+  src: url(/font/Rejouice-Headline.woff2) format("woff2");
+}
+:root {
+  --bg-color: #edece7;
+  --bg-text-color: #0e0e0e;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(/a-stunning-close-up-photograph-of-a-korean-model-s-gbVE8GyOQdOCdYSFx48xow-nrapjiqEQ5SWehxQ-xFh9A.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: awesome;
+  position: relative;
+}
+.menu {
+  width: 100%;
+  position: fixed;
+  /* border: 2px solid red; */
+  display: flex;
+  /* border: 1px solid red; */
+  padding: 3vw;
+  color: var(--bg-color);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.menu-top span {
+  font-size: 19px;
+  position: relative;
+}
+.menu-bottom-heading h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 8vw;
+  color: var(--bg-color);
+  font-size: 23vw;
+}
+.effect::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 0px;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.4s ease;
+}
+
+.effect:hover::before {
+  background-color: var(--bg-color);
+  width: 50px;
+}
+.overlaymenu {
+  background-color: var(--bg-color);
+  color: var(--bg-text-color);
+  width: 100%;
+  /* border: 2px solid red; */
+  transform: translateY(-100%);
+  height: 80vh;
+  /* display: none;   */
+  position: absolute;
+  /* z-index: 100; */
+}
+.overlaytop {
+  /* border: 2px solid black;/ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vw auto 0 auto;
+  position: relative;
+  width: 90%;
+}
+.overlaytop h2 {
+  font-size: 21px;
+  font-weight: 200;
+  position: relative;
+  cursor: pointer;
+}
+.overlaytop .closebtn::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: var(--bg-text-color);
+  /* opacity: 0; */
+  transition: all 0.4s ease;
+}
+.overlaytop .closebtn:hover::before {
+  width: 53px;
+}
+.menu-links {
+  width: 90%;
+  max-height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  /* border: 2px solid; */
+  margin: auto;
+}
+.menu-link-left {
+  width: 25%;
+  height: 80%;
+  /* background-color: black; */
+}
+.menu-video {
+  width: 100%;
+  height: 35vh;
+  background-color: brown;
+  background-image: url("/a-stunning-close-up-photograph-of-a-korean-model-s-gbVE8GyOQdOCdYSFx48xow-nrapjiqEQ5SWehxQ-xFh9A.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+.menu-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.ri-play-circle-fill {
+  margin-right: 5px;
+}
+.menu-link-right {
+  width: 60%;
+  height: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+:is(ul li) a {
+  text-decoration: none;
+  position: relative;
+  font-size: 3rem;
+  font-weight: 100;
+  color: var(--bg-text-color);
+}
+.menu-btn {
+  width: 7rem;
+  height: 3rem;
+  margin: 0px 18vw 0px 0px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border-inline-style: var(--bg-text-color);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: #0e0e0e;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.menu-btn:hover.menu-btn::after {
+  width: 100%;
+}
+.menu-btn:hover {
+  color: var(--bg-color);
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 37px;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #0e0e0e;
+  transition: all ease 0.5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+hr {
+  width: 90%;
+  margin: 1rem auto 13px auto;
+}
+sup {
+  font-size: 11px;
+  font-weight: 100;
+}
+.brands {
+  /* border: 2px solid red; */
+  margin: auto;
+  width: 90%;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.brands-right {
+  display: flex;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+  color: var(--bg-text-color);
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  right: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: #0e0e0e;
+  transition: all ease 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 782px) {
+  .menu-links {
+    flex-direction: column;
+  }
+  .overlaymenu {
+    height: 100vh;
+  }
+  .menu-link-left {
+    /* display: none; */
+  }
+  .menu-link-right {
+    justify-content: flex-start;
+  }
+  :is(ul li) a {
+    text-decoration: none;
+    position: relative;
+    font-size: 2.3rem;
+    font-weight: 100;
+    color: var(--bg-text-color);
+  }
+  hr {
+    margin-top: 5.3rem;
+  }
+  .menu-btn {
+    margin: 0px 30vw 0px 0px;
+  }
+}
+@media (max-width: 590px) {
+  :is(ul li) a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 515px) {
+  .left {
+    display: none;
+  }
+  :is(ul li) a {
+    font-size: 2rem;
+  }
+  .menu-btn {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 275px) {
+  .menu-link-left {
+    display: none;
+  }
+  :is(ul li) a {
+    font-size: 3rem;
+  }
+  .menu-links{
+    margin-top:2rem;
+  }
+  .menu-btn {
+    width: 6rem;
+    height: 2.3rem;
+    font-size: 1rem;
+  }
+}
